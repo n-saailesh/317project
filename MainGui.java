@@ -2,7 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
-import java.util.*;
+import java.util.List;      // ← add this
+import java.util.*;         // keeps ArrayList, Map, HashMap, etc.
+
 
 /**
  * A simple Swing GUI for the grade processing application.
