@@ -2,7 +2,7 @@ import java.io.*;
 import java.text.DecimalFormat;
 import java.util.*;
 
-public class OutputWriter {
+public class OutputFileWriter {
     public void write(List<FinalRecord> list, String outFile) {
         // sort ascending by student ID
         list.sort(Comparator.comparing(FinalRecord::getStudentId));

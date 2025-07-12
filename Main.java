@@ -8,8 +8,8 @@ public class Main {
         }
 
         // parse inputs
-        NameFileParser    np = new NameFileParser(args[0]);
-        CourseFileParser  cp = new CourseFileParser(args[1]);
+        NameRecordReader    np = new NameRecordReader(args[0]);
+        CourseRecordReader  cp = new CourseRecordReader(args[1]);
         np.parse();
         cp.parse();
 
@@ -32,7 +32,7 @@ public class Main {
         }
 
         // write output
-        new OutputWriter().write(finals, args[2]);
+        new OutputFileWriter().write(finals, args[2]);
         System.out.println("Done. Output in " + args[2]);
     }
 }

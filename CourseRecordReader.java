@@ -1,5 +1,5 @@
-public class CourseFileParser extends RecordParser<CourseRecord> {
-    public CourseFileParser(String filename) {
+public class CourseRecordReader extends RecordValidator<CourseRecord> {
+    public CourseRecordReader(String filename) {
         super(filename);
     }
 

@@ -119,8 +119,8 @@ public class MainGui extends JFrame implements ActionListener {
 
         try {
             // Parse inputs
-            NameFileParser np = new NameFileParser(nameFile);
-            CourseFileParser cp = new CourseFileParser(courseFile);
+            NameRecordReader np = new NameRecordReader(nameFile);
+            CourseRecordReader cp = new CourseRecordReader(courseFile);
             np.parse(); cp.parse();
 
             // Map IDs → names
@@ -140,7 +140,7 @@ public class MainGui extends JFrame implements ActionListener {
             }
 
             // Write output
-            new OutputWriter().write(finals, outputFile);
+            new OutputFileWriter().write(finals, outputFile);
             JOptionPane.showMessageDialog(this,
                 "Grades processed successfully!\nOutput: " + outputFile,
                 "Success", JOptionPane.INFORMATION_MESSAGE);

@@ -1,11 +1,11 @@
 import java.io.*;
 import java.util.*;
 
-public abstract class RecordParser<T> {
+public abstract class RecordValidator<T> {
     protected String filename;
     protected List<T> records = new ArrayList<>();
 
-    public RecordParser(String filename) {
+    public RecordValidator(String filename) {
         this.filename = filename;
     }
 
